@@ -1,0 +1,28 @@
+<script setup>
+import { ref } from 'vue';
+
+const count = ref(0);
+</script>
+
+<template>
+  <div class="container">
+    <h1> Vue.js </h1>
+    <p>Виконав: <strong>Зайцев Дмитро, група [ КН 3/1 ]</strong></p>
+    <button class="btn" @click="count++">
+      Кліків: {{ count }}
+    </button>
+  </div>
+</template>
+
+<style scoped>
+.container {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
